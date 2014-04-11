@@ -37,3 +37,4 @@ typedef NS_ENUM(NSInteger, OPSignatureType) {
 - (BOOL)isCertification;
 
 @end
+// onlypgp-wip
