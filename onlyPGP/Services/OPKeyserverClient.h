@@ -24,3 +24,4 @@ typedef void(^OPKeyserverFetchCompletion)(NSString *armoredKey, NSError *error);
 - (void)uploadKey:(NSString *)armoredKey completion:(void(^)(BOOL success, NSError *error))completion;
 
 @end
+// onlypgp-wip
