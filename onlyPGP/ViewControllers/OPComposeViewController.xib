@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="AppleSDK" propertyAccessControl="none" useAutolayout="NO">
+    <dependencies>
+        <deployment version="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OPComposeViewController">
+            <connections>
+                <outlet property="view" destination="cmp-01-root" id="cmp-99-vw0"/>
+                <outlet property="messageTextView" destination="cmp-02-mtxv" id="cmp-99-mtx"/>
+                <outlet property="recipientsButton" destination="cmp-03-rbtn" id="cmp-99-rbt"/>
+                <outlet property="recipientsLabel" destination="cmp-04-rlbl" id="cmp-99-rlb"/>
+                <outlet property="signAsButton" destination="cmp-05-sbtn" id="cmp-99-sbt"/>
+                <outlet property="signAsLabel" destination="cmp-06-slbl" id="cmp-99-slb"/>
+                <outlet property="encryptButton" destination="cmp-07-ebtn" id="cmp-99-ebt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cmp-01-root">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Recipients:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="cmp-08-tlbl">
+                    <rect key="frame" x="15" y="72" width="80" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleBottomMargin="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cmp-03-rbtn">
+                    <rect key="frame" x="95" y="68" width="210" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleBottomMargin="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Select Recipients..."/>
+                    <connections>
+                        <action selector="selectRecipientsTapped:" destination="-1" eventType="touchUpInside" id="cmp-88-rbt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="No recipients selected" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="cmp-04-rlbl">
+                    <rect key="frame" x="15" y="98" width="290" height="18"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleBottomMargin="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.6" green="0.6" blue="0.6" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sign as:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="cmp-09-slb2">
+                    <rect key="frame" x="15" y="124" width="55" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleBottomMargin="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cmp-05-sbtn">
+                    <rect key="frame" x="70" y="120" width="235" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleBottomMargin="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Select Signing Key..."/>
+                    <connections>
+                        <action selector="selectSigningKeyTapped:" destination="-1" eventType="touchUpInside" id="cmp-88-sbt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="None (unsigned)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="cmp-06-slbl">
+                    <rect key="frame" x="15" y="150" width="290" height="18"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleBottomMargin="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.6" green="0.6" blue="0.6" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <view contentMode="scaleToFill" id="cmp-10-sep1">
+                    <rect key="frame" x="0" y="175" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleBottomMargin="YES"/>
+                    <color key="backgroundColor" red="0.8" green="0.8" blue="0.8" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="YES" id="cmp-02-mtxv">
+                    <rect key="frame" x="0" y="176" width="320" height="336"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="cmp-88-txd"/>
+                    </connections>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cmp-07-ebtn">
+                    <rect key="frame" x="15" y="520" width="290" height="40"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleTopMargin="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <state key="normal" title="Encrypt &amp; Send"/>
+                    <connections>
+                        <action selector="encryptAndSendTapped:" destination="-1" eventType="touchUpInside" id="cmp-88-ebt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+</document>
