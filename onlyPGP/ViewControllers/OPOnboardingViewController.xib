@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="AppleSDK" propertyAccessControl="none" useAutolayout="NO">
+    <dependencies>
+        <deployment version="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OPOnboardingViewController">
+            <connections>
+                <outlet property="view" destination="onb-01-root" id="onb-99-vw0"/>
+                <outlet property="scrollView" destination="onb-02-scrv" id="onb-99-scr"/>
+                <outlet property="pageControl" destination="onb-03-pgcl" id="onb-99-pgc"/>
+                <outlet property="skipButton" destination="onb-04-skip" id="onb-99-skp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="onb-01-root">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="onb-02-scrv">
+                    <rect key="frame" x="0" y="0" width="320" height="520"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="onb-88-scd"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="onb-03-pgcl">
+                    <rect key="frame" x="110" y="525" width="100" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleLeftMargin="YES" flexibleRightMargin="YES" flexibleTopMargin="YES"/>
+                    <color key="pageIndicatorTintColor" red="0.8" green="0.8" blue="0.8" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.0" green="0.478" blue="1.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="pageControlChanged:" destination="-1" eventType="valueChanged" id="onb-88-pgc"/>
+                    </connections>
+                </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="onb-04-skip">
+                    <rect key="frame" x="245" y="25" width="65" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleLeftMargin="YES" flexibleBottomMargin="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="Skip"/>
+                    <connections>
+                        <action selector="skipTapped:" destination="-1" eventType="touchUpInside" id="onb-88-skp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+</document>
