@@ -385,4 +385,3 @@ static NSString * const kShortArmoredKey =
 }
 
 @end
-// onlypgp-wip
