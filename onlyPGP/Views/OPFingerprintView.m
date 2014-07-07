@@ -185,4 +185,3 @@ static const CGFloat kOPFingerprintCornerRadius = 6.0f;
 }
 
 @end
-// onlypgp-wip
