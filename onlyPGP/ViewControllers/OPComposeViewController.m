@@ -467,4 +467,3 @@ static const NSInteger kSigningKeyActionSheetTag = 300;
 }
 
 @end
-// onlypgp-wip
