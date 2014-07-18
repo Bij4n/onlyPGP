@@ -14,4 +14,3 @@ target 'onlyPGPTests' do
   pod 'ObjectivePGP'
   pod 'FMDB', '~> 2.3'
 end
-// onlypgp-wip
