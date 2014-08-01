@@ -64,4 +64,3 @@ static OPPassphrasePrompt *sActivePrompt = nil;
 }
 
 @end
-// onlypgp-wip

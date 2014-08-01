@@ -49,4 +49,3 @@ typedef NS_ENUM(NSInteger, OPTrustLevel) {
 - (NSInteger)daysUntilExpiration;
 
 @end
-// onlypgp-wip

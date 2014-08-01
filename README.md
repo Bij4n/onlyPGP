@@ -36,4 +36,3 @@ Requires Xcode 5.1 or later.
 ## License
 
 MIT License. See LICENSE file for details.
-// onlypgp-wip
